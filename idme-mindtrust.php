@@ -4,7 +4,7 @@
  * Plugin Name: ID.me configuration.
  * Plugin URI: https://mindtrust.com
  * Description: This plugin update the message on the ID.me section checkout and deactivate it
- * Version: 2.0.2
+ * Version: 2.0.3
  * Author: Santiago Guarin Alzate
  * Author URI: https://www.facebook.com/zanty.guaro/
  */
@@ -12,6 +12,17 @@ require_once plugin_dir_path(__FILE__) . 'inc/template-calling.php';
 require_once plugin_dir_path(__FILE__) . 'routes/dashboard.php';
 require_once plugin_dir_path(__FILE__) . 'routes/wizard.php';
 require_once plugin_dir_path(__FILE__) . 'routes/users.php';
+$myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
+	'https://github.com/Ramza323/IDme',
+	__FILE__,
+	'idme-mindtrust'
+);
+
+//Set the branch that contains the stable release.
+$myUpdateChecker->setBranch('main');
+
+//Optional: If you're using a private repository, specify the access token like this:
+$myUpdateChecker->setAuthentication('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');
 
 function registerStyles()
 {
