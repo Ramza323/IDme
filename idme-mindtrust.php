@@ -4,7 +4,7 @@
  * Plugin Name: ID.me configuration.
  * Plugin URI: https://mindtrust.com
  * Description: This plugin update the message on the ID.me section checkout and deactivate it
- * Version: 2.0.0
+ * Version: 2.0.2
  * Author: Santiago Guarin Alzate
  * Author URI: https://www.facebook.com/zanty.guaro/
  */
