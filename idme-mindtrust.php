@@ -12,6 +12,7 @@ require_once plugin_dir_path(__FILE__) . 'inc/template-calling.php';
 require_once plugin_dir_path(__FILE__) . 'routes/dashboard.php';
 require_once plugin_dir_path(__FILE__) . 'routes/wizard.php';
 require_once plugin_dir_path(__FILE__) . 'routes/users.php';
+require 'plugin-update-checker/plugin-update-checker.php';
 $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
 	'https://github.com/Ramza323/IDme',
 	__FILE__,
